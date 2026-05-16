@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>King Sammy FX Academy | KSM 75 Mentorship</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <script src="https://s3.tradingview.com/tv.js"></script>
+  <script src="https://korablobstorage.blob.core.windows.net/modal-bucket/korapay-collections.min.js"></script>
+
+  <style>
+    .hero-bg { background-size: cover; background-position: center; }
+    .slideshow-container { position: relative; height: 500px; overflow: hidden; border-radius: 24px; box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); }
+    .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.5s ease-in-out; background-size: cover; background-position: center; }
+    .slide.active { opacity: 1; }
+    .pricing-card { transition: all 0.4s ease; }
+    .pricing-card:hover { transform: translateY(-15px) scale(1.05); }
+  </style>
+</head>
+<body class="bg-white dark:bg-[#0A0A0A] text-gray-900 dark:text-white transition-all duration-300" id="body">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white dark:bg-[#0A0A0A] border-b dark:border-gray-800 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <span class="text-4xl">👑</span>
+        <h1 class="text-3xl font-bold">KING SAMMY FX</h1>
+      </div>
+      <div class="hidden md:flex gap-8 text-lg font-medium">
+        <a href="#home" class="hover:text-emerald-600 dark:hover:text-emerald-400">Home</a>
+        <a href="#about" class="hover:text-emerald-600 dark:hover:text-emerald-400">About</a>
+        <a href="#academy" class="hover:text-emerald-600 dark:hover:text-emerald-400">Academy</a>
+        <a href="#live" class="hover:text-emerald-600 dark:hover:text-emerald-400">Live Charts</a>
+        <a href="#pricing" class="hover:text-emerald-600 dark:hover:text-emerald-400">Pricing</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <button onclick="toggleTheme()" class="p-3 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+          <i class="fas fa-moon text-xl" id="theme-icon"></i>
+        </button>
+        <a href="https://wa.me/2348102745595" target="_blank" class="bg-emerald-600 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero-bg min-h-screen flex items-center relative" style="background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1600');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
+      <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+        LEARN. TRADE.<br><span class="text-emerald-400">CONQUER THE MARKETS</span>
+      </h1>
+      <p class="text-3xl text-emerald-400">KSM 75 Continuation Mentorship</p>
+      <p class="text-xl mt-4">"Training Kings, Not Gamblers"</p>
+    </div>
+  </section>
+
+  <!-- SLIDESHOW -->
+  <section class="py-16 bg-white dark:bg-[#0A0A0A]">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Market Insights</h2>
+      <div class="slideshow-container">
+        <div class="slide active" style="background-image: url('/about/bc1.jfif')"></div>
+        <div class="slide" style="background-image: url('/about/bc2.webp')"></div>
+        <div class="slide" style="background-image: url('/about/bc3.webp')"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24 bg-white dark:bg-[#111111]">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="/about/IMG_1923.jpeg" alt="King Sammy" class="rounded-3xl shadow-2xl w-full">
+      </div>
+      <div>
+        <h2 class="text-5xl font-bold mb-8">About King Sammy</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300">Professional Forex Trader and Mentor based in Lagos, Nigeria.</p>
+        <p class="text-lg text-gray-600 dark:text-gray-300 mt-6">Creator of the powerful <strong>KSM 75 Continuation Strategy</strong> — helping traders achieve consistency through structure and discipline.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED CURRICULUM -->
+  <section id="academy" class="py-24 bg-gray-50 dark:bg-[#0A0A0A]">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-4">KSM 75 Continuation Mentorship</h2>
+      <p class="text-center text-xl text-gray-600 dark:text-gray-400 mb-16">A Complete Structured Forex Trading Program</p>
+
+      <div class="space-y-12">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white dark:bg-[#1A1A1A] p-8 rounded-3xl shadow">
+            <h3 class="text-emerald-600 font-bold text-xl mb-4">📘 MODULE 1 — FOREX FOUNDATIONS</h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li>What Forex is & How the market moves</li>
+              <li>Currency pairs, Pips, Lots & Leverage</li>
+              <li>MT5, TradingView & Broker Setup</li>
+            </ul>
+          </div>
+          <div class="bg-white dark:bg-[#1A1A1A] p-8 rounded-3xl shadow">
+            <h3 class="text-emerald-600 font-bold text-xl mb-4">📊 MODULE 2-3 — MARKET STRUCTURE</h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li>Higher Highs & Higher Lows, Lower Highs & Lower Lows</li>
+              <li>Internal & External Structure</li>
+              <li>Multi-timeframe Analysis</li>
+              <li>Premium & Discount Concepts</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white dark:bg-[#1A1A1A] p-8 rounded-3xl shadow">
+            <h3 class="text-emerald-600 font-bold text-xl mb-4">🌊 MODULE 4 — LIQUIDITY & ORDER FLOW</h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li>Liquidity Sweeps & Stop Hunts</li>
+              <li>Buy-side & Sell-side Liquidity</li>
+              <li>Displacement & Institutional Order Flow</li>
+            </ul>
+          </div>
+          <div class="bg-white dark:bg-[#1A1A1A] p-8 rounded-3xl shadow">
+            <h3 class="text-emerald-600 font-bold text-xl mb-4">🎯 MODULE 5-6 — KEY LEVELS, POIs & SCOB</h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li>Key Levels & POI Identification</li>
+              <li>Single Candle Order Blocks (SCOB)</li>
+              <li>Valid vs Invalid Confirmations</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-[#1A1A1A] p-10 rounded-3xl shadow">
+          <h3 class="text-emerald-600 font-bold text-2xl mb-6">🔱 MODULE 7 — THE KSM 75 CONTINUATION MODEL</h3>
+          <p class="text-lg">The core strategy: 75% retracement concept, full execution framework, entry models, stop loss & take profit placement.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white dark:bg-[#1A1A1A] p-8 rounded-3xl shadow">
+            <h3 class="text-emerald-600 font-bold text-xl mb-4">🧠 MODULE 8 — RISK MANAGEMENT & PSYCHOLOGY</h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li>1-2% Risk Rule & Position Sizing</li>
+              <li>Trading Psychology & Discipline</li>
+              <li>Trading Journal Usage</li>
+            </ul>
+          </div>
+          <div class="bg-white dark:bg-[#1A1A1A] p-8 rounded-3xl shadow">
+            <h3 class="text-emerald-600 font-bold text-xl mb-4">🏆 MODULE 9 — PROP FIRM PREPARATION</h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li>Prop Firm Challenge Rules</li>
+              <li>Consistency Framework</li>
+              <li>Scaling Mindset</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE CHARTS -->
+  <section id="live" class="py-24 bg-white dark:bg-[#111111]">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-12">Live Market Charts</h2>
+      <div id="tv-chart" class="h-[450px] rounded-3xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow"></div>
+    </div>
+  </section>
+
+  <!-- FIXED RESPONSIVE PRICING -->
+  <section id="pricing" class="py-20 md:py-24 bg-gray-50 dark:bg-[#0A0A0A]">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Choose Your Plan</h2>
+      <p class="text-gray-600 dark:text-gray-400 mb-12">Secure one-time payment via KoraPay</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+        
+        <!-- BASIC -->
+        <div class="pricing-card bg-white dark:bg-[#1A1A1A] p-6 md:p-10 rounded-3xl shadow border border-gray-100 dark:border-gray-700 text-center">
+          <h3 class="text-2xl font-bold">BASIC</h3>
+          <p class="text-4xl md:text-6xl font-bold mt-6 text-emerald-600">₦150,000</p>
+          <p class="text-sm text-gray-500 mt-1">One-time</p>
+          <button onclick="payWithKora('BASIC', 150000)" 
+                  class="mt-10 w-full py-4 md:py-6 bg-gray-900 text-white rounded-2xl font-bold text-base md:text-lg">
+            Enroll Now
+          </button>
+        </div>
+
+        <!-- KSM PRO -->
+        <div class="pricing-card bg-emerald-600 text-white p-6 md:p-10 rounded-3xl shadow relative scale-105 text-center">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-emerald-600 px-6 py-1.5 rounded-full text-sm font-bold">MOST POPULAR</div>
+          <h3 class="text-3xl font-bold">KSM PRO</h3>
+          <p class="text-4xl md:text-6xl font-bold mt-6">₦350,000</p>
+          <p class="text-sm text-emerald-100 mt-1">One-time</p>
+          <button onclick="payWithKora('KSM_PRO', 350000)" 
+                  class="mt-10 w-full py-4 md:py-6 bg-white text-emerald-600 font-bold rounded-2xl text-base md:text-lg">
+            Join Pro Now
+          </button>
+        </div>
+
+        <!-- ELITE -->
+        <div class="pricing-card bg-white dark:bg-[#1A1A1A] p-6 md:p-10 rounded-3xl shadow border border-gray-100 dark:border-gray-700 text-center">
+          <h3 class="text-2xl font-bold">ELITE KINGS</h3>
+          <p class="text-4xl md:text-6xl font-bold mt-6 text-emerald-600">₦750,000</p>
+          <p class="text-sm text-gray-500 mt-1">One-time</p>
+          <button onclick="payWithKora('ELITE', 750000)" 
+                  class="mt-10 w-full py-4 md:py-6 bg-gray-900 text-white rounded-2xl font-bold text-base md:text-lg">
+            Go Elite
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/2348102745595" target="_blank" class="fixed bottom-8 right-8 bg-emerald-600 text-white p-5 rounded-full text-4xl shadow-2xl hover:scale-110 transition z-50">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    function toggleTheme() {
+      document.getElementById('body').classList.toggle('dark');
+    }
+
+    // Slideshow
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    function nextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+    setInterval(nextSlide, 5000);
+
+    // Korapay
+    const KORAPAY_PUBLIC_KEY = "pk_test_xxxxxxxxxxxxxxxxxxxxxxxx"; // Replace with your real key
+
+    function payWithKora(plan, amount) {
+      const email = prompt("Enter your email:", "your@email.com");
+      if (!email) return;
+      Korapay.initialize({
+        key: KORAPAY_PUBLIC_KEY,
+        amount: amount,
+        currency: "NGN",
+        customer: { email: email },
+        reference: "KSM-" + Date.now(),
+        narration: `King Sammy FX - ${plan}`,
+        callback: function(res) {
+          if (res.status === "success") alert("🎉 Payment Successful! Welcome King 👑");
+        }
+      });
+    }
+
+    // TradingView
+    new TradingView.widget({
+      width: "100%", height: "450", symbol: "FX:EURUSD", interval: "15",
+      timezone: "Etc/UTC", theme: "light", style: "1", locale: "en",
+      container_id: "tv-chart"
+    });
+  </script>
+</body>
+</html>
